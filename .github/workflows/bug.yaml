@@ -14,16 +14,16 @@ jobs:
         which python
         python --version
 
-    - uses: actions/setup-python@v2
-      with:
-        python-version: "3.9"
+    - uses: r-lib/actions/setup-r@master
 
     - name: Check Python version
       run: |
         which python
         python --version
 
-    - uses: r-lib/actions/setup-r@master
+    - uses: actions/setup-python@v2
+      with:
+        python-version: "3.9"
 
     - name: Check Python version
       run: |
